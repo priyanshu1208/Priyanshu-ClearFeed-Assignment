@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static\style.css">
+    <title>ClearFeed</title>
+   
+</head>
+<body>
+    <nav>
+        <h1>ClearFeed</h1>
+    </nav>
+    <h1>Query App</h1>
+    <form onsubmit="event.preventDefault(); submitQuery();">
+        <label for="query_question">Query Question:</label><br>
+        <input type="text" id="query_question" name="query_question" required><br><br>
+
+        <label for="model_dropdown">Select Model:</label><br>
+        <select id="model_dropdown" name="model_dropdown">
+            <option value="1">Approach 1: BM25</option>
+            <option value="2">Approach 2: Cosine</option>
+            <option value="3">Approach 3: Sentence Transformer</option>
+            <option value="4">Approach 4: GoogleRequest</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <label for="links" class = "link_label">Links:</label><br>
+    <textarea id="links" name="links" rows="5" cols="50" readonly></textarea><br><br>
+
+    <label for="answer" class = "link_label">Answer:</label><br>
+    <textarea id="answer" name="answer" rows="5" cols="50" readonly></textarea>
+    <script src="static\script.js"></script>
+</body>
+
+</html>

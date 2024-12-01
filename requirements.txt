@@ -1,0 +1,11 @@
+pandas 
+numpy 
+matplotlib
+seaborn
+sentence_transformers 
+faiss-cpu
+rank_bm25 
+nltk
+openai
+python-dotenv
+flask
