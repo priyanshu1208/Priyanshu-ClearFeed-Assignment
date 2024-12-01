@@ -12,3 +12,8 @@ This approach leverages Sentence Transformers for semantic embeddings and FAISS 
 Technique 4: Google Search API Integration
 This method queries Google Search for URLs relevant to the query within a specific domain.
 
+
+<h2> Execution Steps</h2>
+1. Install all the libraries from requirements.txt(pip install -r requirements.txt)
+2. Start the Flask server using app.py file(python app.py)
+
